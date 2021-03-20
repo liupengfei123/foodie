@@ -1,11 +1,14 @@
 package com.lpf.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.util.Date;
 
 public class OrderStatus {
     /**
      * 订单ID;对应订单表的主键id
      */
+    @TableId
     private String orderId;
 
     /**
