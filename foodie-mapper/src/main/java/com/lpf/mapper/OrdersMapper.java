@@ -1,7 +1,7 @@
 package com.lpf.mapper;
 
-import com.lpf.my.mapper.MyMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lpf.pojo.Orders;
 
-public interface OrdersMapper extends MyMapper<Orders> {
+public interface OrdersMapper extends BaseMapper<Orders> {
 }

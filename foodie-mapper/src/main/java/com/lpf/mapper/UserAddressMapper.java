@@ -1,7 +1,7 @@
 package com.lpf.mapper;
 
-import com.lpf.my.mapper.MyMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lpf.pojo.UserAddress;
 
-public interface UserAddressMapper extends MyMapper<UserAddress> {
+public interface UserAddressMapper extends BaseMapper<UserAddress> {
 }

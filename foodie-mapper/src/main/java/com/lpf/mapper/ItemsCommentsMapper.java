@@ -1,7 +1,7 @@
 package com.lpf.mapper;
 
-import com.lpf.my.mapper.MyMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lpf.pojo.ItemsComments;
 
-public interface ItemsCommentsMapper extends MyMapper<ItemsComments> {
+public interface ItemsCommentsMapper extends BaseMapper<ItemsComments> {
 }
