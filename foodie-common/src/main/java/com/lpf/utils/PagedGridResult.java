@@ -9,7 +9,7 @@ import java.util.List;
 public class PagedGridResult {
 	
 	private int page;			// 当前页数
-	private int total;			// 总页数	
+	private long total;			// 总页数
 	private long records;		// 总记录数
 	private List<?> rows;		// 每行显示的内容
 
@@ -19,10 +19,10 @@ public class PagedGridResult {
 	public void setPage(int page) {
 		this.page = page;
 	}
-	public int getTotal() {
+	public long getTotal() {
 		return total;
 	}
-	public void setTotal(int total) {
+	public void setTotal(long total) {
 		this.total = total;
 	}
 	public long getRecords() {
