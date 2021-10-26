@@ -1,4 +1,4 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.consts.PayConsts;
 import com.lpf.enums.OrderStatusEnum;
@@ -7,7 +7,7 @@ import com.lpf.pojo.OrderStatus;
 import com.lpf.pojo.bo.SubmitOrderBO;
 import com.lpf.pojo.vo.MerchantOrdersVO;
 import com.lpf.pojo.vo.OrderVO;
-import com.lpf.service.OrderService;
+import com.lpf.service.platform.OrderService;
 import com.lpf.utils.ResultJSONResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

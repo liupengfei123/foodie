@@ -1,9 +1,9 @@
-package com.lpf.service.impl;
+package com.lpf.service.platform.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lpf.mapper.CarouselMapper;
 import com.lpf.pojo.Carousel;
-import com.lpf.service.CarouselService;
+import com.lpf.service.platform.CarouselService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

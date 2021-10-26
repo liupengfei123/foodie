@@ -1,4 +1,4 @@
-package com.lpf.service;
+package com.lpf.service.platform;
 
 import com.lpf.pojo.Category;
 import com.lpf.pojo.vo.CategoryVO;

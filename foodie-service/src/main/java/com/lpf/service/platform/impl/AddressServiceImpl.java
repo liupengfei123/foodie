@@ -1,11 +1,11 @@
-package com.lpf.service.impl;
+package com.lpf.service.platform.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lpf.enums.YesOrNo;
 import com.lpf.mapper.UserAddressMapper;
 import com.lpf.pojo.UserAddress;
 import com.lpf.pojo.bo.AddressBO;
-import com.lpf.service.AddressService;
+import com.lpf.service.platform.AddressService;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.lpf.config;
 
-import com.lpf.service.OrderService;
+import com.lpf.service.platform.OrderService;
 import com.lpf.utils.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;

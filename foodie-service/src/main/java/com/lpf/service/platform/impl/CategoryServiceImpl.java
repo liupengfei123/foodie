@@ -1,11 +1,11 @@
-package com.lpf.service.impl;
+package com.lpf.service.platform.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lpf.mapper.CategoryMapper;
 import com.lpf.pojo.Category;
 import com.lpf.pojo.vo.CategoryVO;
 import com.lpf.pojo.vo.NewItemsVO;
-import com.lpf.service.CategoryService;
+import com.lpf.service.platform.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

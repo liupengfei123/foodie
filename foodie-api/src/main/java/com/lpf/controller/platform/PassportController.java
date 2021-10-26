@@ -1,8 +1,8 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.pojo.Users;
 import com.lpf.pojo.bo.UserBO;
-import com.lpf.service.UserService;
+import com.lpf.service.platform.UserService;
 import com.lpf.utils.CookieUtils;
 import com.lpf.utils.JsonUtils;
 import com.lpf.utils.MD5Utils;

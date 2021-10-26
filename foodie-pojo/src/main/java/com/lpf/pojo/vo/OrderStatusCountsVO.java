@@ -1,11 +1,13 @@
 package com.lpf.pojo.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
  * 订单状态概览数量VO 
  */
 @Data
+@AllArgsConstructor
 public class OrderStatusCountsVO {
 
     private Integer waitPayCounts;

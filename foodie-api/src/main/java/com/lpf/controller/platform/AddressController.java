@@ -1,8 +1,8 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.pojo.UserAddress;
 import com.lpf.pojo.bo.AddressBO;
-import com.lpf.service.AddressService;
+import com.lpf.service.platform.AddressService;
 import com.lpf.utils.MobileEmailUtils;
 import com.lpf.utils.ResultJSONResult;
 import io.swagger.annotations.Api;

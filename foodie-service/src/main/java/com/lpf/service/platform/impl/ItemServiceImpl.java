@@ -1,4 +1,4 @@
-package com.lpf.service.impl;
+package com.lpf.service.platform.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -10,7 +10,8 @@ import com.lpf.pojo.vo.CommentLevelCountsVO;
 import com.lpf.pojo.vo.ItemCommentVO;
 import com.lpf.pojo.vo.SearchItemsVO;
 import com.lpf.pojo.vo.ShopcartVO;
-import com.lpf.service.ItemService;
+import com.lpf.service.platform.ItemService;
+import com.lpf.service.util.PageUtils;
 import com.lpf.utils.DesensitizationUtil;
 import com.lpf.utils.PagedGridResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -102,17 +103,9 @@ public class ItemServiceImpl implements ItemService {
             vo.setNickname(DesensitizationUtil.commonDisplay(vo.getNickname()));
         }
         pageInfo.setRecords(list);
-        return setterPagedGrid(pageInfo, page);
+        return PageUtils.setterPagedGrid(pageInfo, page);
     }
 
-    private PagedGridResult setterPagedGrid(Page<?> pagInfo, Integer page) {
-        PagedGridResult grid = new PagedGridResult();
-        grid.setPage(page);
-        grid.setRows(pagInfo.getRecords());
-        grid.setTotal(pagInfo.getPages());
-        grid.setRecords(pagInfo.getTotal());
-        return grid;
-    }
 
     @Override
     public PagedGridResult searhItems(String keywords, String sort, Integer page, Integer pageSize) {
@@ -122,7 +115,7 @@ public class ItemServiceImpl implements ItemService {
         Page<SearchItemsVO> pageInfo = new Page<>(page, pageSize);
         List<SearchItemsVO> list = itemsMapper.searchItems(pageInfo, map);
         pageInfo.setRecords(list);
-        return setterPagedGrid(pageInfo, page);
+        return PageUtils.setterPagedGrid(pageInfo, page);
     }
 
     @Override
@@ -134,7 +127,7 @@ public class ItemServiceImpl implements ItemService {
         Page<SearchItemsVO> pagInfo = new Page<>(page, pageSize);
         List<SearchItemsVO> list = itemsMapper.searchItemsByThirdCat(pagInfo, map);
         pagInfo.setRecords(list);
-        return setterPagedGrid(pagInfo, page);
+        return PageUtils.setterPagedGrid(pagInfo, page);
     }
 
     @Override

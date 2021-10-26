@@ -1,11 +1,11 @@
-package com.lpf.service.impl;
+package com.lpf.service.platform.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lpf.enums.Sex;
 import com.lpf.mapper.UsersMapper;
 import com.lpf.pojo.Users;
 import com.lpf.pojo.bo.UserBO;
-import com.lpf.service.UserService;
+import com.lpf.service.platform.UserService;
 import com.lpf.utils.DateUtil;
 import com.lpf.utils.MD5Utils;
 import org.n3r.idworker.Sid;

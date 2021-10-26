@@ -1,4 +1,4 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.pojo.bo.ShopcartBO;
 import com.lpf.utils.ResultJSONResult;

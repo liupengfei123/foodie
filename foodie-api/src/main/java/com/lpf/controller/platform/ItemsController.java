@@ -1,4 +1,4 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.consts.PageConsts;
 import com.lpf.pojo.Items;
@@ -8,7 +8,7 @@ import com.lpf.pojo.ItemsSpec;
 import com.lpf.pojo.vo.CommentLevelCountsVO;
 import com.lpf.pojo.vo.ItemInfoVO;
 import com.lpf.pojo.vo.ShopcartVO;
-import com.lpf.service.ItemService;
+import com.lpf.service.platform.ItemService;
 import com.lpf.utils.PagedGridResult;
 import com.lpf.utils.ResultJSONResult;
 import io.swagger.annotations.Api;

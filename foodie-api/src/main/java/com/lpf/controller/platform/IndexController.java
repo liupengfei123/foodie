@@ -1,12 +1,12 @@
-package com.lpf.controller;
+package com.lpf.controller.platform;
 
 import com.lpf.enums.YesOrNo;
 import com.lpf.pojo.Carousel;
 import com.lpf.pojo.Category;
 import com.lpf.pojo.vo.CategoryVO;
 import com.lpf.pojo.vo.NewItemsVO;
-import com.lpf.service.CarouselService;
-import com.lpf.service.CategoryService;
+import com.lpf.service.platform.CarouselService;
+import com.lpf.service.platform.CategoryService;
 import com.lpf.utils.ResultJSONResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
