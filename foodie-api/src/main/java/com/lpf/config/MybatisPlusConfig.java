@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2021-03-28 14:52
  */
 @Configuration
-@MapperScan("com.baomidou.cloud.service.*.mapper*")
+@MapperScan("com.lpf.mapper")
 public class MybatisPlusConfig {
 
     // 最新版
